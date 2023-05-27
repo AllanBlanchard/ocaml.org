@@ -50,6 +50,7 @@ let page_routes =
       Dream.get Url.papers Handler.papers;
       Dream.get Url.best_practices Handler.best_practices;
       Dream.get Url.problems Handler.problems;
+      Dream.get (Url.tutorial "are-we-web-yet") (Handler.are_we_yet "web");
       Dream.get (Url.tutorial ":id") Handler.tutorial;
       Dream.get Url.playground Handler.playground;
       Dream.get Url.installer Handler.installer;

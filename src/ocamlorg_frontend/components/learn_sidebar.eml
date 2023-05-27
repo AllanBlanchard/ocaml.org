@@ -33,3 +33,7 @@ let render
     (tutorial_sidebar_links_by_category "resources")
     ~extra_html:((render_tutorial_link ~title:"Best Practices" ~slug:"best-practices")
       ^ (render_tutorial_link ~title:"OCaml Platform" ~slug:"platform")) %>
+
+  <%s! Learn_layout.sidebar_link_group "Are we Yet"
+    (tutorial_sidebar_links_by_category "are-we-yet")
+     ~extra_html:(render_tutorial_link ~title:"Are we web yet?" ~slug:"are-we-web-yet") %>
