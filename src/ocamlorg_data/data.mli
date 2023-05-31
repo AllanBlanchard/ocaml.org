@@ -396,3 +396,21 @@ module Code_example : sig
 
   val get : string -> t
 end
+
+module Governance : sig
+  type member = { name : string; github : string; role : string }
+  type contact = { name : string; link : string; icon : string }
+
+  type team = {
+    id : string;
+    name : string;
+    description : string;
+    contacts : contact list;
+    members : member list;
+    subteams : team list;
+  }
+
+  val teams : team list
+  val working_groups : team list
+  val get_by_id : string -> team option
+end

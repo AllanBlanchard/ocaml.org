@@ -12,6 +12,8 @@
 @import "./partials/shadows.css";
 @import "./partials/tags.css";
 @import "./partials/typography.css";
+@import "./partials/governance.css";
+
 
 @import "./other/syntax.css";
 
@@ -47,6 +49,12 @@ body {
 
 .bg-pattern h2 {
   background: -webkit-linear-gradient(left, #ff9a9e, #fad0c4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2.gradient {
+  background: -webkit-linear-gradient(left, #EFA4F2,#0076ff, #62A8FF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -233,6 +241,14 @@ summary::marker {
 
 .output-container {
     height: calc(100% - 60px);
+}
+.our-team {
+  background: linear-gradient(270deg, #0B1528 0%, rgba(11, 21, 40, 0.958333) 53.65%, #0B1528 100%);
+}
+.our-team button {
+  border: 1px solid #fff;
+  color: #fff;
+  opacity: 0.6;
 }
 
 /* summary & details expandable section */

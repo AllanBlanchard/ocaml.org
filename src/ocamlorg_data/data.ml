@@ -166,3 +166,10 @@ module Code_example = struct
 
   let get title = List.find (fun x -> String.equal x.title title) all
 end
+
+module Governance = struct
+  include Governance
+
+  let get_by_id id =
+    List.find_opt (fun x -> String.equal id x.id) (teams @ working_groups)
+end
